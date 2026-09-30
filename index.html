@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caleb Muthoka - Creative Designer & Photographer</title>
+    <style>
+        :root {
+            --primary: #121212;
+            --accent: #d4af37;
+            --text-light: #f5f5f5;
+            --text-muted: #b0b0b0;
+            --card-bg: #1e1e1e;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--primary);
+            color: var(--text-light);
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('designs.png') no-repeat center center/cover;
+            padding: 100px 20px;
+            text-align: center;
+            border-bottom: 2px solid var(--accent);
+        }
+
+        header h1 {
+            font-size: 3rem;
+            color: var(--accent);
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            max-width: 600px;
+            margin: 0 auto 20px auto;
+        }
+
+        .social-links {
+            margin-top: 15px;
+        }
+
+        .social-links a {
+            color: var(--text-light);
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        .social-links a:hover {
+            color: var(--accent);
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 50px 20px;
+        }
+
+        section {
+            margin-bottom: 60px;
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: var(--accent);
+            margin-bottom: 25px;
+            border-bottom: 1px solid #333;
+            padding-bottom: 10px;
+        }
+
+        .about-grid, .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+        }
+
+        .card h3 {
+            color: var(--accent);
+            margin-bottom: 15px;
+        }
+
+        /* Portfolio Gallery */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .gallery-item {
+            background-color: var(--card-bg);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+            text-align: center;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .gallery-caption {
+            padding: 15px;
+            font-size: 0.95rem;
+            color: var(--text-muted);
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            background-color: #0a0a0a;
+            color: var(--text-muted);
+            border-top: 1px solid #222;
+        }
+
+        @media (max-width: 768px) {
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+            header h1 {
+                font-size: 2.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Caleb Muthoka</h1>
+        <p>Graphic Designer • Photographer • Creative Technologist</p>
+        <p>Nairobi, Kenya | 0768 086 885 | muthokacaleb1@gmail.com</p>
+        <div class="social-links">
+            <a href="https://instagram.com/muth0kaa" target="_blank">Instagram: @muth0kaa</a>
+        </div>
+    </header>
+
+    <div class="container">
+
+        <!-- Professional Profile -->
+        <section>
+            <h2>Professional Profile</h2>
+            <div class="card">
+                <p>Creative Designer, Photographer, and Tech enthusiast based in Nairobi, Kenya, with experience creating visual content for churches, businesses, events, and personal brands[cite: 11]. I combine graphic design, photography, and digital technology to create visuals that are aesthetically strong and communicate a clear message[cite: 11].</p>
+                <p style="margin-top: 15px;">Currently pursuing Computer Science and Technology Studies at Zetech University[cite: 11].</p>
+            </div>
+        </section>
+
+        <!-- Design Samples Section -->
+        <section>
+            <h2>Featured Design Work</h2>
+            <p style="color: var(--text-muted); margin-bottom: 20px;">The designs listed below represent my 4 sample projects.</p>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="designs.png" alt="Graduation Ceremony Poster Sample" style="object-fit: cover; object-position: top left; max-height: 450px;">
+                    <div class="gallery-caption"><strong>Sample 1:</strong> Graduation Ceremony Event Flyer & Poster Design</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="designs.png" alt="Faith & Purpose Conference Poster Sample" style="object-fit: cover; object-position: top right; max-height: 450px;">
+                    <div class="gallery-caption"><strong>Sample 2:</strong> Faith & Purpose Conference Ministry Graphic</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="designs.png" alt="Glow Naturally Beauty Product Sample" style="object-fit: cover; object-position: bottom left; max-height: 450px;">
+                    <div class="gallery-caption"><strong>Sample 3:</strong> Mboina Beauty Shop Promotional Social Media Content</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="designs.png" alt="Happy Birthday Celebration Design Sample" style="object-fit: cover; object-position: bottom right; max-height: 450px;">
+                    <div class="gallery-caption"><strong>Sample 4:</strong> Personal Brand / Birthday Celebration Event Graphic</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Core Skills & Software -->
+        <section>
+            <h2>Core Skills & Software</h2>
+            <div class="about-grid">
+                <div class="card">
+                    <h3>Core Skills</h3>
+                    <ul>
+                        <li>Graphic Design & Visual Identity[cite: 11]</li>
+                        <li>Social Media Content Design[cite: 11]</li>
+                        <li>Poster, Flyer & Event Graphics[cite: 11]</li>
+                        <li>Church & Ministry Graphics[cite: 11]</li>
+                        <li>Photo Editing & Manipulation[cite: 11]</li>
+                        <li>Creative Concept Development & Storytelling[cite: 11]</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Design Software</h3>
+                    <ul>
+                        <li><strong>Adobe Photoshop:</strong> Creative editing, compositing, photo manipulation[cite: 11].</li>
+                        <li><strong>Affinity:</strong> Graphic design, photo editing, visual composition[cite: 11].</li>
+                        <li><strong>Canva:</strong> Social media content, promotional materials[cite: 11].</li>
+                        <li><strong>Figma:</strong> Digital design, layouts, interfaces[cite: 11].</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience -->
+        <section>
+            <h2>Experience</h2>
+            <div class="about-grid">
+                <div class="card">
+                    <h3>Freelance Graphic Designer</h3>
+                    <p style="color: var(--accent); font-size: 0.9rem; margin-bottom: 10px;">2024 - Present | Nairobi, Kenya[cite: 11]</p>
+                    <ul>
+                        <li>Designing posters, flyers, and promotional materials[cite: 11].</li>
+                        <li>Creating social media graphics for businesses and personal brands[cite: 11].</li>
+                        <li>Combining photography and graphic design to produce original content[cite: 11].</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Graphic Designer - Worldwide Gospel Church of Kenya</h3>
+                    <p style="color: var(--accent); font-size: 0.9rem; margin-bottom: 10px;">2025 - 2026[cite: 11]</p>
+                    <ul>
+                        <li>Designed event posters and promotional graphics for ministries[cite: 11].</li>
+                        <li>Created visual content for church communication and digital distribution[cite: 11].</li>
+                        <li>Maintained professional visual identity across church platforms[cite: 11].</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Caleb Muthoka. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
